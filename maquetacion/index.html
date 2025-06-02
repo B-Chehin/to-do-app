@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <title>To Do App</title>
     <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/v4-shims.min.css"
+    />
+    <script src="./script.js" defer></script>
   </head>
 
   <body>
@@ -12,37 +22,60 @@
         <img src="./assets/images/icon.png" alt="Logo" class="logo" />
       </div>
       <h1 class="title">To Do App</h1>
+
       <nav class="header-links">
         <ul class="links">
-          <li><img class="link" src="./assets/images/linkedin.png" alt="Linkedin" /></li>
-          <li><img class="link" src="./assets/images/github.png" alt="Github" /></li>
-          <li><img class="link" src="./assets/images/mail.png" alt="Mail" /></li>
+          <li>
+            <img
+              class="link"
+              src="./assets/images/linkedin.png"
+              alt="Linkedin"
+            />
+          </li>
+          <li>
+            <img class="link" src="./assets/images/github.png" alt="Github" />
+          </li>
+          <li>
+            <img class="link" src="./assets/images/mail.png" alt="Mail" />
+          </li>
         </ul>
       </nav>
     </header>
 
     <main>
       <section class="task-section">
+        <!-- Modal -->
+        <div id="modal" class="modal">
+          <div class="modal-content">
+            <h3>Task Details</h3>
+            <p id="modal-description">
+              Description of the task will appear here.
+            </p>
+            <button class="close-modal">Close</button>
+          </div>
+        </div>
         <ul class="list-task">
           <li>
             <article class="article">
               <h3 class="title-task">titulo</h3>
-              <p class="description">descripcion de un articulo muy grande que puede ocurrir que tengamos alguno</p>
+              <date class="date">2023-10-01</date>
+              <p class="description">
+                descripcion de un articulo muy grande que puede ocurrir que
+                tengamos alguno
+              </p>
               <div class="buttons-article">
-                <button type="button" class="done">Done</button>
-                <button type="button" class="remove">Remove</button>
-                <button type="button" class="update">Update</button>
-              </div>
-            </article>
-          </li>
-          <li>
-            <article class="article">
-              <h3 class="title-task">titulo</h3>
-              <p class="description">descripcion</p>
-              <div class="buttons-article">
-                <button type="button" class="done">Done</button>
-                <button type="button" class="remove">Remove</button>
-                <button type="button" class="update">Update</button>
+                <button type="button button-check" class="done">
+                  <i class="fas fa-check"></i>
+                  <!-- Ícono de "Done" -->
+                </button>
+                <button type="button button-update" class="update">
+                  <i class="fas fa-edit"></i>
+                  <!-- Ícono de "Update" -->
+                </button>
+                <button type="button button-remove" class="remove">
+                  <i class="fas fa-trash"></i>
+                  <!-- Ícono de "Remove" -->
+                </button>
               </div>
             </article>
           </li>
@@ -55,35 +88,41 @@
           <input type="text" name="title" placeholder="Title" />
           <input type="text" name="description" placeholder="Description" />
           <input type="date" name="date" />
-          <label for="checkboxes">Priority:</label>
-          <ul id="checkboxes">
-            <li>
-              <label><input type="radio" name="priority" value="low" /> Low</label>
-            </li>
-            <li>
-              <label><input type="radio" name="priority" value="medium" /> Medium</label>
-            </li>
-            <li>
-              <label><input type="radio" name="priority" value="high" /> High</label>
-            </li>
-          </ul>
           <button type="submit">Create</button>
+        </form>
+        <h2>Filter Tasks</h2>
+        <form class="filter-form">
+          <label for="filter">Filter by title:</label>
+          <input type="text" id="filter" name="filtertitle" />
+          <label for="filter">Filter by date:</label>
+          <input type="date" id="filter-date" name="filterdate" />
+          <button type="submit">Filter</button>
         </form>
       </aside>
     </main>
 
     <footer class="footer-general">
       <p class="footer-text">
-        © Bautista Chehin <strong class="developer">Full Stack</strong> Developer.
+        © Bautista Chehin
+        <strong class="developer">Full Stack</strong> Developer.
       </p>
       <nav class="footer-links">
         <ul class="links">
-          <li><img class="link" src="./assets/images/linkedin.png" alt="Linkedin" /></li>
-          <li><img class="link" src="./assets/images/github.png" alt="Github" /></li>
-          <li><img class="link" src="./assets/images/mail.png" alt="Mail" /></li>
+          <li>
+            <img
+              class="link"
+              src="./assets/images/linkedin.png"
+              alt="Linkedin"
+            />
+          </li>
+          <li>
+            <img class="link" src="./assets/images/github.png" alt="Github" />
+          </li>
+          <li>
+            <img class="link" src="./assets/images/mail.png" alt="Mail" />
+          </li>
         </ul>
       </nav>
     </footer>
   </body>
 </html>
-
