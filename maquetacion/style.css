@@ -190,7 +190,9 @@
   
   .aside h2:hover {
     cursor: pointer;
-    font-size: 2.2rem;
+    font-size: 2.7rem; /* Aumenta el tamaño al pasar el cursor */
+    color: #ffcc00; /* Cambia el color al pasar el cursor */
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.7); /* Intensifica la sombra */
   }
   
   .aside form {
