@@ -35,7 +35,6 @@ export const Create = () => {
     </strong>
 
     <form id="task-form" className="task-form" onSubmit={saveTask}>
-      <h2 className="aside-title">Create a task</h2>
       <input type="text" name="title" placeholder="Title" onChange={changed}/>
       <input type="text" name="description" placeholder="Description" onChange={changed}/>
       <input type="date" name="date" onChange={changed}/>

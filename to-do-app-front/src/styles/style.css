@@ -85,7 +85,23 @@
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
-  
+ 
+  .empty{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 3.5rem;
+    color: #999;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+    text-align: center; /* Asegura que el texto esté centrado */
+  }
+  .empty:hover {
+    cursor: pointer;
+    color: #666; /* Cambia el color al pasar el cursor */
+    transform: scale(1.05); /* Añade un efecto de zoom */
+  }
 .list-task {
     display: flex;
     flex-direction: column;

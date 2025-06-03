@@ -4,7 +4,7 @@ import { Create } from '../Create'
 export const Aside = () => {
   return (
     <aside className="aside">
-        
+        <h2 className="aside-title">Create a task</h2>
         <Create />
         <h2 className="aside-title">Filter Tasks</h2>
         <form className="filter-form">

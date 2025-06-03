@@ -1,10 +1,14 @@
 import React from 'react'
+import githubIcon from "../../assets/images/github.png";
+import linkedinIcon from "../../assets/images/linkedin.png";
+import mailIcon from "../../assets/images/mail.png";
+import icon from "../../assets/images/icon.png";
 
 export const Header = () => {
   return (
     <header className="header-general">
       <div className="logo">
-        <img src="./assets/images/icon.png" alt="Logo" className="logo" />
+        <img src={icon} alt="Logo" className="logo" />
       </div>
       <h1 className="title">To Do App</h1>
 
@@ -18,7 +22,7 @@ export const Header = () => {
             >
               <img
                 className="link"
-                src="../../assets/images/linkedin.png"
+                src= {linkedinIcon}
                 alt="Linkedin"
               />
             </a>
@@ -29,12 +33,12 @@ export const Header = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img className="link" src="./assets/images/github.png" alt="Github" />
+              <img className="link" src={githubIcon} alt="Github" />
             </a>
           </li>
           <li>
             <a href="mailto:chehinbautista@gmail.com">
-              <img className="link" src="./assets/images/mail.png" alt="Mail" />
+              <img className="link" src={mailIcon} alt="Mail" />
             </a>
           </li>
         </ul>

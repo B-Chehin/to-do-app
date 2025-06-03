@@ -48,7 +48,7 @@ export const List = () => {
           </article>
         ))
       ) : (
-        <h2>No Articles</h2>
+        <h2 className="empty">No Articles</h2>
       )}
       </section>
   )

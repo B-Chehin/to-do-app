@@ -1,4 +1,7 @@
 import React from "react";
+import githubIcon from "../../assets/images/github.png";
+import linkedinIcon from "../../assets/images/linkedin.png";
+import mailIcon from "../../assets/images/mail.png";
 
 export const Footer = () => {
   return (
@@ -15,11 +18,7 @@ export const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
-                className="link"
-                src="./assets/images/linkedin.png"
-                alt="Linkedin"
-              />
+              <img className="link" src={linkedinIcon} alt="Linkedin" />
             </a>
           </li>
           <li>
@@ -28,16 +27,12 @@ export const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
-                className="link"
-                src="./assets/images/github.png"
-                alt="Github"
-              />
+              <img className="link" src={githubIcon} alt="Github" />
             </a>
           </li>
           <li>
             <a href="mailto:chehinbautista@gmail.com">
-              <img className="link" src="./assets/images/mail.png" alt="Mail" />
+              <img className="link" src={mailIcon} alt="Mail" />
             </a>
           </li>
         </ul>
