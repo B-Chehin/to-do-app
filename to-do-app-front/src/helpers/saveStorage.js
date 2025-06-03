@@ -1,4 +1,4 @@
-export const GuradarEnStorage = (clave, elemento) =>{
+export const saveStorage = (clave, elemento) =>{
 
     // Conseguir los elementos que ya tenemos en el local storage
     let elementos = JSON.parse(localStorage.getItem(clave));

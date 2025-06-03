@@ -9,7 +9,7 @@
     box-sizing: border-box;
   }
   
-  body {
+  .layout {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;

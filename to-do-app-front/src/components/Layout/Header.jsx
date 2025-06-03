@@ -18,7 +18,7 @@ export const Header = () => {
             >
               <img
                 className="link"
-                src="./assets/images/linkedin.png"
+                src="../../assets/images/linkedin.png"
                 alt="Linkedin"
               />
             </a>
