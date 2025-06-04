@@ -1,3 +1,4 @@
+
 :root {
     --main-color: #09f;
     --title-color: #121b24;
@@ -117,7 +118,7 @@
     align-items: center;
 }
 
-.list-task li article {
+.article {
   display: flex; /* Cambia a flex para disposición horizontal */
   flex-direction: row; /* Asegura que los elementos estén en fila */
   justify-content: space-between; /* Espacia los elementos horizontalmente */
@@ -156,6 +157,17 @@
   align-items: center; /* Centra los botones verticalmente */
   gap: 10px; /* Espacio entre los botones */
   margin-right: 20px; /* Espacio a la derecha de los botones */
+}
+
+.update:hover{
+  background-color: #ff9800; /* Cambia el color al pasar el cursor */
+}
+
+.done:hover{
+  background-color: #4caf50; /* Cambia el color al pasar el cursor */
+}
+.remove:hover{
+  background-color: #ee0f0f;
 }
   .article {
     padding: 10px;
@@ -281,20 +293,6 @@
     color: white; /* Color de los íconos */
   }
   
-  /* Priority Styles */
-  #checkboxes {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0;
-  }
-  
-  #checkboxes li {
-    margin: 5px 0;
-  }
-  
-  #checkboxes input[type="radio"] {
-    accent-color: black;
-  }
 
   .modal {
     position: fixed;

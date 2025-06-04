@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import getTasks from "../../helpers/getTasks";
+import Article from "../Article";
 
 
 export const List = () => {
@@ -30,22 +31,12 @@ export const List = () => {
             </div>
           ) : tasks.length > 0 ? (
             tasks.map((task) => (
-          <article className="article" key={task.id}>
-            <h3 className="title-task">{task.title}</h3>
-            <date className="date">{task.date}</date>
-            <p className="description">{task.description}</p>
-            <div className="buttons-article">
-              <button type="button" className="done">
-                <i className="fas fa-check"></i>
-              </button>
-              <button type="button" className="update">
-                <i className="fas fa-edit"></i>
-              </button>
-              <button type="button" className="remove">
-                <i className="fas fa-trash"></i>
-              </button>
-            </div>
-          </article>
+          <Article
+            id={task.id}
+            title={task.title}
+            description={task.description}
+            date={task.date}
+            />
         ))
       ) : (
         <h2 className="empty">No Articles</h2>
